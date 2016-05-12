@@ -58,6 +58,7 @@
     [super layoutSubviews];
     
     [[self playerLayer] setFrame:[self bounds]];
+    [self playerLayer].videoGravity = AVLayerVideoGravityResizeAspectFill;
     
     [[self actionButton] setFrame:[self bounds]];
     
